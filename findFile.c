@@ -18,7 +18,6 @@ void findFile(char *current_dir)
 
     while((dirp=readdir(dp)) != NULL)
     {
-        printf("%s\n", current_dir);
         if(!strcmp(dirp->d_name, file_name))
         {
             printf("File you were looking for found at directory %s\n", current_dir);
